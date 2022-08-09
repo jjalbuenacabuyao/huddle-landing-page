@@ -612,11 +612,19 @@ main,
   }
 }
 
+@media (min-width: 768px) {
+  .cards p {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+  }
+}
+
 .card-1, 
     .card-2, 
     .card-3 {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 4rem;
   border-radius: 0.5rem;
   padding-top: 4rem;
@@ -657,6 +665,17 @@ main,
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+@media (min-width: 768px) {
+  .btn {
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 3rem;
+    padding-right: 3rem;
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
+}
+
 .card-title, 
     .cta h2 {
   margin-bottom: 1.25rem;
@@ -664,6 +683,14 @@ main,
   font-size: 1.25rem;
   line-height: 1.75rem;
   font-weight: 700;
+}
+
+@media (min-width: 768px) {
+  .card-title, 
+    .cta h2 {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
 }
 
 .footer-container {
@@ -723,8 +750,32 @@ main,
   margin-bottom: 10rem;
 }
 
+.mb-10 {
+  margin-bottom: 2.5rem;
+}
+
+.mb-16 {
+  margin-bottom: 4rem;
+}
+
+.mb-20 {
+  margin-bottom: 5rem;
+}
+
+.mb-32 {
+  margin-bottom: 8rem;
+}
+
 .flex {
   display: flex;
+}
+
+.min-h-full {
+  min-height: 100%;
+}
+
+.min-h-screen {
+  min-height: 100vh;
 }
 
 .w-32 {
@@ -737,6 +788,64 @@ main,
 
 .w-48 {
   width: 12rem;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.w-max {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+
+.w-fit {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+.w-\[fit\] {
+  width: fit;
+}
+
+.w-\[100vh\] {
+  width: 100vh;
+}
+
+.min-w-full {
+  min-width: 100%;
+}
+
+.min-w-fit {
+  min-width: -webkit-fit-content;
+  min-width: -moz-fit-content;
+  min-width: fit-content;
+}
+
+.max-w-lg {
+  max-width: 32rem;
+}
+
+.max-w-xl {
+  max-width: 36rem;
+}
+
+.max-w-2xl {
+  max-width: 42rem;
+}
+
+.max-w-3xl {
+  max-width: 48rem;
+}
+
+.max-w-5xl {
+  max-width: 64rem;
+}
+
+.max-w-4xl {
+  max-width: 56rem;
 }
 
 .flex-col {
@@ -899,6 +1008,16 @@ main,
   .md\:row-span-2 {
     grid-row: span 2 / span 2;
   }
+
+  .md\:text-4xl {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+  }
+
+  .md\:text-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
 }
 
 @media (min-width: 1024px) {
@@ -933,9 +1052,5 @@ main,
 
   .lg\:text-left {
     text-align: left;
-  }
-
-  .lg\:text-right {
-    text-align: right;
   }
 }

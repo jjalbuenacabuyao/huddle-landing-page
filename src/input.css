@@ -13,10 +13,14 @@
         @apply mx-7 md:mx-16 lg:mx-32;
     }
 
+    .cards p {
+        @apply md:text-lg;
+    }
+
     .card-1,
     .card-2,
     .card-3 {
-        @apply flex flex-col gap-16 text-center py-16 px-8 shadow-lg rounded-lg lg:flex-row lg:items-center lg:gap-10;
+        @apply flex flex-col items-center gap-16 text-center py-16 px-8 shadow-lg rounded-lg lg:flex-row lg:items-center lg:gap-10;
     }
 
     .card-1,
@@ -25,12 +29,12 @@
     }
 
     .btn {
-        @apply bg-pink-500 py-2 rounded-full px-8 text-white font-bold;
+        @apply bg-pink-500 py-2 rounded-full px-8 text-white font-bold md:text-base md:py-3 md:px-12;
     }
 
     .card-title,
     .cta h2 {
-        @apply font-bold text-xl mb-5 font-poppins;
+        @apply font-bold text-xl mb-5 font-poppins md:text-4xl;
     }
 
     .footer-container {
