@@ -1,0 +1,47 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .hero h1,
+    .hero p, {
+        @apply pb-6;
+    }
+
+    main,
+    .footer-container {
+        @apply mx-7 md:mx-16 lg:mx-32;
+    }
+
+    .card-1,
+    .card-2,
+    .card-3 {
+        @apply flex flex-col gap-16 text-center py-16 px-8 shadow-lg rounded-lg lg:flex-row lg:items-center lg:gap-10;
+    }
+
+    .card-1,
+    .card-3 {
+        @apply lg:flex-row-reverse;
+    }
+
+    .btn {
+        @apply bg-pink-500 py-2 rounded-full px-8 text-white font-bold;
+    }
+
+    .card-title,
+    .cta h2 {
+        @apply font-bold text-xl mb-5 font-poppins;
+    }
+
+    .footer-container {
+        @apply grid gap-6 md:grid-cols-3 md:gap-x-20 lg:grid-cols-6 text-white lg:gap-x-16 lg:gap-y-10 lg:items-start;
+    }
+
+    .contact-info {
+        @apply flex flex-col gap-5 text-justify;
+    }
+
+    .contact-info > * {
+        @apply flex gap-5;
+    }
+}
